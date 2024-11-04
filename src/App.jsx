@@ -1,10 +1,14 @@
-import React from "react";
+{
+  /*App.jsx*/
+}
+
+import React, { useReducer } from "react";
+import AdvancedCounter from "./components/UseReducer/AdvancedCounter";
 
 export function App(props) {
   return (
-    <div className="App">
-      <h1>Hello React.</h1>
-      <h2>Start editing to see some magic happen!</h2>
+    <div>
+      <AdvancedCounter />
     </div>
   );
 }
