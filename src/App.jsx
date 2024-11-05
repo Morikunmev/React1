@@ -1,12 +1,24 @@
-import React, { useReducer } from "react";
-import { DocumentTitle } from "./components/UseEffect/DocumentTitle";
-import { UserList } from "./components/UseEffect/UserList";
-import { WindowSize } from "./components/UseEffect/WindowSize";
-export function App(props) {
+// App.jsx
+import { AppProvider } from "./components/UseContext/AppContext";
+import { Header } from "./components/UseContext/Header";
+import { NotificationCenter } from "./components/UseContext/NotificationCenter";
+import { ThemeSettings } from "./components/UseContext/ThemeSettings";
+import { UserPreferences } from "./components/UseContext/UserPreferences";
+import { UserProfile } from "./components/UseContext/UserProfile";
+
+export function App() {
   return (
-    <div>
-      <WindowSize />
-    </div>
+    <AppProvider>
+      <div>
+        <Header />
+        <main>
+          <UserProfile />
+          <NotificationCenter />
+          <ThemeSettings />
+          <UserPreferences />
+        </main>
+      </div>
+    </AppProvider>
   );
 }
 
