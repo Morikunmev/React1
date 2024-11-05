@@ -1,12 +1,11 @@
 import React, { useReducer } from "react";
-import AdvancedCounter from "./components/UseReducer/AdvancedCounter";
-import TodoList from "./components/UseReducer/TodoList";
-import BookList from "./components/UseReducer/BookList";
-
+import { DocumentTitle } from "./components/UseEffect/DocumentTitle";
+import { UserList } from "./components/UseEffect/UserList";
+import { WindowSize } from "./components/UseEffect/WindowSize";
 export function App(props) {
   return (
     <div>
-      <BookList />
+      <WindowSize />
     </div>
   );
 }
