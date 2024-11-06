@@ -1,24 +1,14 @@
 // App.jsx
-import { AppProvider } from "./components/UseContext/AppContext";
-import { Header } from "./components/UseContext/Header";
-import { NotificationCenter } from "./components/UseContext/NotificationCenter";
-import { ThemeSettings } from "./components/UseContext/ThemeSettings";
-import { UserPreferences } from "./components/UseContext/UserPreferences";
-import { UserProfile } from "./components/UseContext/UserProfile";
+import { useState } from "react";
+import { ExpensiveCalculation } from "./components/UseMemo/ExpensiveCalculation";
+import { FilterList } from "./components/UseMemo/FilterList";
 
 export function App() {
   return (
-    <AppProvider>
-      <div>
-        <Header />
-        <main>
-          <UserProfile />
-          <NotificationCenter />
-          <ThemeSettings />
-          <UserPreferences />
-        </main>
-      </div>
-    </AppProvider>
+    <div>
+      <h1>Mi Aplicacion</h1>
+      <FilterList />
+    </div>
   );
 }
 
